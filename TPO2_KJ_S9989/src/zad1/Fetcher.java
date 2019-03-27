@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.util.InputMismatchException;
 
 class Fetcher
 {
@@ -14,24 +15,28 @@ class Fetcher
         this.url = url;
     }
 
-    String fetch() throws IOException
+    String fetch() throws InputMismatchException
     {
-        URL url = new URL(this.url);
-
         StringBuilder result = new StringBuilder();
 
-        // Open URL stream as an input stream and print contents to command line
-        try (BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()))) {
-            String inputLine;
+        try {
+            URL url = new URL(this.url);
 
-            // Read the "gpl.txt" text file from its URL representation
-            while((inputLine = in.readLine()) != null) {
-                result.append(inputLine);
+            // Open URL stream as an input stream and print contents to command line
+            try (BufferedReader in = new BufferedReader(new InputStreamReader(url.openStream()))) {
+                String inputLine;
+
+                // Read the "gpl.txt" text file from its URL representation
+                while((inputLine = in.readLine()) != null) {
+                    result.append(inputLine);
+                }
+            } catch (IOException ioe) {
+                ioe.printStackTrace(System.err);
             }
-        } catch (IOException ioe) {
-            ioe.printStackTrace(System.err);
-        }
 
+        } catch (IOException e) {
+            throw new InputMismatchException(e.getMessage());
+        }
 
         return result.toString();
     }
