@@ -21,21 +21,7 @@ class Service {
 
     Service(String country, Locale inLocale) throws IllegalArgumentException
     {
-
-        Map<String, String> countries = new HashMap<>();
-        for (String iso : Locale.getISOCountries()) {
-            Locale l = new Locale("", iso);
-            countries.put(l.getDisplayCountry(inLocale), iso);
-        }
-
-        String countryLocale = countries.get(country);
-
-        if (countryLocale == null) {
-            throw new IllegalArgumentException("Nieznana nazwa kraju");
-        }
-
-        Locale locale = new Locale("", countryLocale);
-        this.currency = Currency.getInstance(locale);
+        this.setCountry(country, inLocale);
     }
 
     Service(String country)
@@ -43,9 +29,30 @@ class Service {
         this(country, Locale.UK);
     }
 
-    String getWeather(String city)
+    String getWeatherMain(String city) throws IOException
     {
-        String api = "https://samples.openweathermap.org/data/2.5/weather?q={city}&appid=1";
+        StringBuilder result = new StringBuilder();
+
+        try {
+            Object jp = new JSONParser().parse(this.getWeather(city));
+            JSONObject jo = (JSONObject) jp;
+//            System.out.println(jo.get("base"));
+            Map<String, Double> rates = (Map<String, Double>) jo.get("main");
+
+            for (Map.Entry<String, Double> entry : rates.entrySet()) {
+                result.append(entry.getKey() + ": " + entry.getValue() + "<br>");
+            }
+
+        } catch (ParseException e) {
+            throw new IOException("Błąd przy przetwarzaniu odpowiedzi z API exchangerateapi");
+        }
+
+        return result.toString();
+    }
+
+    String getWeather(String city) throws IOException
+    {
+        String api = "https://api.openweathermap.org/data/2.5/weather?q={city}&appid=71bdedd556ba21cb42043b65e94b6dc0";
         Fetcher fetcher = new Fetcher(api.replace("{city}", city));
 
         return fetcher.fetch();
@@ -71,7 +78,7 @@ class Service {
             }
 
         } catch (ParseException e) {
-            throw new IOException("Błąd przy przetwarzaniu odpowiedzi z API");
+            throw new IOException("Błąd przy przetwarzaniu odpowiedzi z API exchangerateapi");
         }
 
         return rate;
@@ -111,7 +118,30 @@ class Service {
         return rate;
     }
 
-    public Currency getCurrency()
+    void setCountry(String country, Locale inLocale)
+    {
+        Map<String, String> countries = new HashMap<>();
+        for (String iso : Locale.getISOCountries()) {
+            Locale l = new Locale("", iso);
+            countries.put(l.getDisplayCountry(inLocale), iso);
+        }
+
+        String countryLocale = countries.get(country);
+
+        if (countryLocale == null) {
+            throw new IllegalArgumentException("Nieznana nazwa kraju");
+        }
+
+        Locale locale = new Locale("", countryLocale);
+        this.currency = Currency.getInstance(locale);
+    }
+
+    void setCountry(String country)
+    {
+        this.setCountry(country, Locale.UK);
+    }
+
+    Currency getCurrency()
     {
         return currency;
     }
