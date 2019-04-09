@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90cdfa2c-e508-4a89-90ec-1ac8be181cc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/out/production/TPO2_KJ_S9989/zad1/Fetcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/out/production/TPO2_KJ_S9989/zad1/Main$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/out/production/TPO2_KJ_S9989/zad1/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/out/production/TPO2_KJ_S9989/zad1/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Futil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Futil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/MyFileVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/MyFileVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/src/zad1/MyFileVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/src/zad1/MyFileVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/libraries/javafx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/libraries/javafx.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/TPO2_KJ_S9989.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/TPO2_KJ_S9989.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/src/zad1/Fetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/src/zad1/Fetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/src/zad1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/src/zad1/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -215,7 +230,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554822365168" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554823604786" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../TPO2_KJ_S9989/src/zad1/Main.java" />
   </component>
   <component name="RecentsManager">
