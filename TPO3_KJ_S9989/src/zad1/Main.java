@@ -3,6 +3,7 @@ package zad1;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.HashMap;
 import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
@@ -10,10 +11,19 @@ import java.util.regex.Pattern;
 
 public class Main {
 
+    private static final int SERVER_PORT = 9991;
+    private static final int MAX_CONNECTIONS = 20;
+
+    private static final HashMap<String, Integer> dictionaries = new HashMap<>();
+
     public static void main(String[] args) throws Exception {
-        try (var listener = new ServerSocket(9991)) {
-            System.out.println("The Main (9991) server is running...");
-            var pool = Executors.newFixedThreadPool(20);
+
+        dictionaries.put("EN", Dictionary.DICTIONARY_EN_PORT);
+        dictionaries.put("FR", Dictionary.DICTIONARY_FR_PORT);
+
+        try (var listener = new ServerSocket(SERVER_PORT)) {
+            System.out.println("The Main (" + SERVER_PORT + ") server is running...");
+            var pool = Executors.newFixedThreadPool(MAX_CONNECTIONS);
             while (true) {
                 pool.execute(new Capitalizer(listener.accept()));
             }
@@ -36,18 +46,27 @@ public class Main {
                 var in = new Scanner(socket.getInputStream());
                 var out = new PrintWriter(socket.getOutputStream(), true);
                 while (in.hasNextLine()) {
+                    String input = in.nextLine();
 
-                    Response response = new Response(in.nextLine());
+                    System.out.println("Received [" + input + "] from client");
 
-                    if (response.getMessage().equals("OK")) {
-                        var socket = new Socket("127.0.0.1", 9992);
+                    Response response = new Response(input);
+                    out.println(response.getContent());
+
+                    if (response.getContent().equals("OK")) {
+
+                        Request request = new Request(response);
+
+                        Socket socket = new Socket("127.0.0.1", request.getSocketPort());
+
                         var socketInput = new PrintWriter(socket.getOutputStream(), true);
                         var socketOutput = new Scanner(socket.getInputStream());
-                        socketInput.println(response.getWord() + ";" + response.getPort());
-                        System.out.println("Odpowiedz dict: " + socketOutput.nextLine());
+
+                        socketInput.println(request.getContent());
+                        System.out.println("Sent [" + request.getContent() + "] to Dict");
+                        System.out.println("Dict response: " + socketOutput.nextLine());
                     }
 
-                    out.println(response.getMessage());
                 }
             } catch (Exception e) {
                 System.out.println("Error:" + socket);
@@ -62,8 +81,9 @@ public class Main {
 
     private static class Response
     {
-        String message = "OK";
-        String word, lang, port;
+        private String message = "OK";
+        private String word, lang;
+        private Integer port;
 
         Response(String input)
         {
@@ -73,12 +93,18 @@ public class Main {
                 this.message = "Wrong format";
             }
 
+            String language = matcher.group(2);
+
+            if (!dictionaries.containsKey(language)) {
+                this.message = "Unknown language '" + language + "'";
+            }
+
             this.word = matcher.group(1);
-            this.lang = matcher.group(2);
-            this.port = matcher.group(3);
+            this.lang = language;
+            this.port = Integer.valueOf(matcher.group(3));
         }
 
-        String getMessage() {
+        String getContent() {
             return message;
         }
 
@@ -90,8 +116,31 @@ public class Main {
             return lang;
         }
 
-        String getPort() {
+        Integer getPort() {
             return port;
+        }
+    }
+
+    private static class Request
+    {
+        private String word;
+        private Integer socketPort;
+        private Integer port;
+
+        Request(Response response)
+        {
+            this.word = response.getWord();
+            this.port = response.getPort();
+            this.socketPort = dictionaries.get(response.getLang());
+        }
+
+        String getContent()
+        {
+            return this.word + ";" + this.port;
+        }
+
+        Integer getSocketPort() {
+            return socketPort;
         }
     }
 

@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e12a90da-2e39-4df5-af46-a0c3af095945" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Futil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Futil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/MyFileVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/bin/zad1/MyFileVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO1_KJ_S9989/src/zad1/MyFileVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO1_KJ_S9989/src/zad1/MyFileVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javafx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/javafx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TPO2_KJ_S9989.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TPO2_KJ_S9989.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/Fetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zad1/Fetcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zad1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zad1/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zad1/Fetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zad1/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zad1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/zad1/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Dictionary$Dict.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Dictionary$Dict.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Dictionary$Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Dictionary$Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Dictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Main$Capitalizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Main$Capitalizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Main$Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Main$Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/bin/zad1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/ActiveClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/ActiveClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO3_KJ_S9989/src/zad1/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,40 +27,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1498087328">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="181" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="181" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="128" column="28" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,40 +57,9 @@
       <find>getRoot</find>
       <find>Back</find>
       <find>Backg</find>
+      <find>JText</find>
+      <find>JBU</find>
     </findStrings>
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="977">
-              <caret line="189" column="13" lean-forward="true" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/zad1/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
-              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-              <folding>
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zad1/Fetcher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" lean-forward="true" selection-start-line="22" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -126,10 +80,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="346" />
-    <option name="y" value="126" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -137,7 +91,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -232,10 +185,10 @@
     <option name="totallyTimeSpent" value="2264000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14658849" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14818764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -254,6 +207,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32917467" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -268,31 +222,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="977">
-          <caret line="189" column="13" lean-forward="true" selection-start-line="189" selection-start-column="13" selection-end-line="189" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zad1/Fetcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" lean-forward="true" selection-start-line="22" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="103" column="39" lean-forward="true" selection-start-line="103" selection-start-column="39" selection-end-line="103" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zad1/Fetcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -317,6 +247,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="128" column="28" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
