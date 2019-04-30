@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90cdfa2c-e508-4a89-90ec-1ac8be181cc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TPO2_KJ_S9989/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/bin/zad1/Fetcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/bin/zad1/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/bin/zad1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TPO2_KJ_S9989/bin/zad1/Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Dictionary$Dict.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/zad1/Dictionary$Dict.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Dictionary$Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/zad1/Dictionary$Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Dictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/zad1/Dictionary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Main$Capitalizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/zad1/Main$Capitalizer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Main$Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/zad1/Main$Response.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/zad1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/zad1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/ActiveClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zad1/ActiveClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zad1/Dictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/zad1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/zad1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/META-INF/TPO3_KJ_S9989.kotlin_module" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,12 +15,12 @@
     <favorites_list name="TPO3_KJ_S9989" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zad1/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-798">
-              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="119">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3801#3802#0" expanded="true" />
@@ -57,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="306">
+              <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3480#3481#0" expanded="true" />
@@ -110,7 +94,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -134,6 +117,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -240,7 +224,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5007236" side_tool="true" weight="0.21801706" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.4992764" visible="true" weight="0.21801706" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.4992764" visible="true" weight="0.22014925" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.2521645" />
@@ -303,16 +287,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zad1/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zad1/Client.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -352,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zad1/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="119">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3801#3802#0" expanded="true" />
@@ -372,8 +347,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zad1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="306">
+          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3480#3481#0" expanded="true" />
