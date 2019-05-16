@@ -7,7 +7,7 @@ import java.util.Map;
 
 import javax.rmi.PortableRemoteObject;
 
-public class PhoneDirectory extends PortableRemoteObject implements PhoneDirectoryInterface
+    public class PhoneDirectory extends PortableRemoteObject implements PhoneDirectoryInterface
 {
     private Map pbMap = new HashMap();
 
@@ -15,9 +15,6 @@ public class PhoneDirectory extends PortableRemoteObject implements PhoneDirecto
     {
         super();
 
-        // Inicjalna zawartość książki telefonicznej
-        // jest wczytywana z pliku o formacie
-        //  imię  numer_telefonu
         try {
             BufferedReader br = new BufferedReader(
                     new FileReader(fileName));

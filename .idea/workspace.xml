@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f910c6a-d02c-490a-bd89-a91e4d0e2453" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tpo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tpo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TPO2_KJ_S9989/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TPO2_KJ_S9989/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPO2_KJ_S9989/out/production/TPO2_KJ_S9989/zad1/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/TPO2_KJ_S9989/out/production/TPO2_KJ_S9989/zad1/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectoryInterface.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/TPO1_KJ_S9989/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,23 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TPO1_KJ_S9989/src/zad1/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/TPO5_KJ_S9989/src/HelloServer.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#612#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,14 +44,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectory.java" />
+        <option value="$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectoryInterface.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="736" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1097" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -67,6 +68,24 @@
               <item name="tpo" type="b2602c69:ProjectViewProjectNode" />
               <item name="tpo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tpo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpo" type="462c0819:PsiDirectoryNode" />
+              <item name="TPO5_KJ_S9989" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpo" type="462c0819:PsiDirectoryNode" />
+              <item name="TPO5_KJ_S9989" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpo" type="462c0819:PsiDirectoryNode" />
+              <item name="TPO5_KJ_S9989" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zad1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -78,8 +97,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558021590694" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558021776419" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TPO5_KJ_S9989" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -129,16 +148,15 @@
       <workItem from="1553713339899" duration="48000" />
       <workItem from="1553713402017" duration="11000" />
       <workItem from="1553713582329" duration="77000" />
-      <workItem from="1558021481554" duration="109000" />
+      <workItem from="1558021481554" duration="296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1286000" />
+    <option name="totallyTimeSpent" value="1473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -175,6 +193,23 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TPO1_KJ_S9989/src/zad1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -185,10 +220,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/TPO5_KJ_S9989/src/zad1/PhoneDirectoryInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TPO5_KJ_S9989/src/HelloServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#612#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
