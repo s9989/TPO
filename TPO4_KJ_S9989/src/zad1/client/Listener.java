@@ -17,6 +17,8 @@ public class Listener {
     private static SocketChannel channel;
     private static ByteBuffer buffer;
     private static Listener instance;
+    private JPanel listPane;
+    private JFrame frame;
 
     private HashMap<String, TextArea> textAreas = new HashMap<>();
 
@@ -38,17 +40,8 @@ public class Listener {
         channel.write(buffer);
     }
 
-    private void renderGui(String[] topics)
+    private void renderListPanel(String[] topics)
     {
-        JFrame frame = new JFrame(gc);
-        frame.setTitle("Client");
-        frame.setSize(400, 300);
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(new FlowLayout());
-
-        JPanel listPane = new JPanel();
         listPane.setLayout(new BoxLayout(listPane, BoxLayout.PAGE_AXIS));
 
         for (String topic : topics) {
@@ -119,10 +112,47 @@ public class Listener {
                 }
             });
         }
+    }
 
-        frame.add(listPane);
+    private void renderGui(String[] topics)
+    {
+        frame = new JFrame(gc);
+        frame.setTitle("Client");
+        frame.setSize(400, 800);
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setLocation(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new FlowLayout());
 
-        frame.pack();
+        JPanel wrapPanel = new JPanel();
+        wrapPanel.setLayout(new BoxLayout(wrapPanel, BoxLayout.PAGE_AXIS));
+
+        JButton refresh = new JButton("odśwież");
+        refresh.setBackground(Color.YELLOW);
+
+        wrapPanel.add(refresh);
+
+        refresh.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    var b1 = ByteBuffer.wrap(("info°channels").getBytes());
+                    channel.write(b1);
+                } catch (IOException ex) {
+                    // bez obsługi
+                }
+            }
+        });
+
+
+        listPane = new JPanel();
+
+        renderListPanel(topics);
+
+        wrapPanel.add(listPane);
+        frame.add(wrapPanel);
+
+//        frame.pack();
         frame.setVisible(true);
     }
 
@@ -153,8 +183,20 @@ public class Listener {
     private void handleResponse(String data)
     {
         String topicMessageSplitter = "¦";
+        String channelInfoSplitter = "°";
 
         if (!data.contains(topicMessageSplitter)) {
+
+            if (data.contains(channelInfoSplitter)) { // refresh topics
+                String response = data.split(channelInfoSplitter)[1];
+                System.out.println(response);
+
+                listPane.removeAll();
+                renderListPanel(response.split(";"));
+                listPane.revalidate();
+                listPane.repaint();
+            }
+
             return;
         }
 

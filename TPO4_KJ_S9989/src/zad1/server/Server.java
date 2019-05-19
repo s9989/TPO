@@ -152,6 +152,10 @@ class Server
                 key.interestOps(SelectionKey.OP_READ | SelectionKey.OP_WRITE);
             }
 
+            if (command.equals("info")) {
+                writeToChannel(channel, "°" + getTopics());
+            }
+
             if (command.equals("add")) {
                 topics.add(data);
             }
