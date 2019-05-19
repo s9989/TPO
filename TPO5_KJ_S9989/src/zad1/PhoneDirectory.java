@@ -7,7 +7,7 @@ import java.util.Map;
 
 import javax.rmi.PortableRemoteObject;
 
-    public class PhoneDirectory extends PortableRemoteObject implements PhoneDirectoryInterface
+public class PhoneDirectory extends PortableRemoteObject implements PhoneDirectoryInterface
 {
     private Map pbMap = new HashMap();
 

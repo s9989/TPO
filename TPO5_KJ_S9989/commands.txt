@@ -1,16 +1,16 @@
 tpo/
 
 compilacja wszystkiego:
-"c:\Program Files\Java\jdk1.8.0_211\bin\javac.exe" -d bin -classpath src src/zad1/PhoneDirectory.java src/zad1/PhoneBookServer.java src/zad1/Client.java
+"c:\Program Files\Java\jdk1.8.0_171\bin\javac.exe" -d bin -classpath src src/zad1/PhoneDirectory.java src/zad1/PhoneBookServer.java src/zad1/Client.java
 
 tpo/bin/
 
 tworzenie stuba:
-"c:\Program Files\Java\jdk1.8.0_211\bin\rmic.exe" -iiop zad1.PhoneDirectory
+"c:\Program Files\Java\jdk1.8.0_171\bin\rmic.exe" -iiop zad1.PhoneDirectory
 
 tpo/bin/
 
 uruchamianie:
-"c:\Program Files\Java\jdk1.8.0_211\bin\orbd.exe" -ORBInitialPort 1050
-"c:\Program Files\Java\jdk1.8.0_211\bin\java.exe" -classpath . -Djava.naming.factory.initial=com.sun.jndi.cosnaming.CNCtxFactory -Djava.naming.provider.url=iiop://localhost:1050 zad1.PhoneBookServer
-"c:\Program Files\Java\jdk1.8.0_211\bin\java.exe" -classpath . -Djava.naming.factory.initial=com.sun.jndi.cosnaming.CNCtxFactory -Djava.naming.provider.url=iiop://localhost:1050 zad1.Client
+"c:\Program Files\Java\jdk1.8.0_171\bin\orbd.exe" -ORBInitialPort 1050
+"c:\Program Files\Java\jdk1.8.0_171\bin\java.exe" -classpath . -Djava.naming.factory.initial=com.sun.jndi.cosnaming.CNCtxFactory -Djava.naming.provider.url=iiop://localhost:1050 zad1.PhoneBookServer
+"c:\Program Files\Java\jdk1.8.0_171\bin\java.exe" -classpath . -Djava.naming.factory.initial=com.sun.jndi.cosnaming.CNCtxFactory -Djava.naming.provider.url=iiop://localhost:1050 zad1.Client
